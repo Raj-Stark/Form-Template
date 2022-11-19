@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-center {
+  max-width: 1170px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-box {
+  max-width: 750px;
+  width: 100%;
+  height: 95vh;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 600px) {
+  .main-box {
+    min-width: 100px;
+    padding: 1.5rem;
+    height: auto;
+  }
+}
+
+.title {
+  width: 100%;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.form-box {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem 1.5rem;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e e"
+    "f g"
+    "h i"
+    "j j";
+
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+
+/* ! Cell 1 */
+.cell-1 {
+  width: 100%;
+  align-self: center;
+  grid-area: a;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-1 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-1 input {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* ! Cell 2 */
+.cell-2 {
+  width: 100%;
+  align-self: center;
+  grid-area: b;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-2 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-2 input {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+/* ! Cell 3 */
+.cell-3 {
+  width: 100%;
+  /* height: 100%; */
+  grid-area: c;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-3 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-3 input {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+/* ! Cell 4 */
+.cell-4 {
+  width: 100%;
+
+  grid-area: d;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-4 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-4 select {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* ! Cell -5 */
+
+.cell-5 {
+  width: 100%;
+
+  grid-area: e;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.cell-5 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-5 textarea {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* ! Cell - 6 */
+.cell-6 {
+  width: 100%;
+
+  grid-area: f;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-6 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-6 input {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+/* ! Cell - 7 */
+.cell-7 {
+  width: 100%;
+
+  grid-area: g;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-7 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-7 input {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+/* ! Cell - 8 */
+.cell-8 {
+  width: 100%;
+
+  grid-area: h;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-8 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-8 input {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+/* ! Cell - 9 */
+.cell-9 {
+  width: 100%;
+
+  grid-area: i;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.cell-9 label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cell-9 input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.cell-10 {
+  grid-area: j;
+  padding: 0.5rem;
+  justify-self: end;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.cell-10 button {
+  padding: 0.4rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: transparent;
+  background: orange;
+  font-size: 1rem;
+}
